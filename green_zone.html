@@ -1,0 +1,511 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+      <title>Duke Business Advisor</title>
+      <!-- Add meta tags for SEO -->
+      <meta name="description" content="Duke Business Advisor">
+      <!-- CSS Files -->
+      <link rel="icon" href="img/favicon.webp" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+   </head>
+   <style type="text/css">
+      body {
+    color: #202020;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,
+h1,
+p,
+ul {
+    margin: 0;
+}
+ul {
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: "poppins";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.a-center {
+    align-items: center;
+}
+.float-right {
+    float: right;
+}
+.btn-duke-blue {
+    background: linear-gradient(249.46deg, #2878ff 1.31%, #2c65c8 100%);
+    padding: 14px 40px;
+    border-radius: 8px !important;
+    font-family: "Plus Jakarta Sans" !important;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+.oxygen-home .hero_section .banner2_img {
+    display: none;
+}
+.oxygen-home .hero_section {
+    padding: 25px 0px;
+    background-image: url(img/banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.oxygen-home .hero_section .banner_sec {
+    padding: 120px 0px;
+}
+.oxygen-home .navbar-expand-lg .navbar-nav .nav-link {
+    color: #121d2f;
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    padding-left:20px!important;
+    padding-right:20px!important;
+}
+.oxygen-home .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+.oxygen-home .hero_section .banner_sec .heropara h1 {
+    font-family: "poppins";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    color: #030c1b;
+    line-height: 1.4em;
+}
+.oxygen-home .hero_section .banner_sec .heropara p {
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #364050;
+    line-height: 1.7em;
+    padding: 20px 0px;
+}
+@media only screen and (max-width: 600px) {
+    .oxygen-home nav.navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand img {
+        width: 200px;
+    }
+    .oxygen-home .hero_section .banner_sec {
+        padding: 50px 20px;
+    }
+    .oxygen-home .hero_section .banner_sec .heropara h1 {
+        font-size: 26px;
+    }
+    .oxygen-home .hero_section .banner_sec .heropara p {
+        font-size: 14px;
+    }
+    .oxygen-home .hero_section .banner2_img {
+        display: block;
+    }
+    .oxygen-home .hero_section .btn-mob {
+        display: none;
+    }
+    .hero_section {
+        background-image: none !important;
+    }
+}
+@media (max-width:991px){
+    .btn-duke-blue{
+
+        padding:12px 15px;
+        font-size:10px!important;
+    }
+
+}
+
+
+*,
+:after,
+:before {
+    box-sizing: border-box !important;
+}
+.oxygen-home img {
+    display: initial;
+}
+.oxygen-home .active {
+    border: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+}
+.oxygen-home h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+.oxygen-home h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+    .oxygen-home h1 {
+        font-size: 2.5rem;
+    }
+}
+.oxygen-home p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.oxygen-home ul {
+    padding-left: 2rem;
+}
+.oxygen-home ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.oxygen-home a {
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+    text-decoration: underline;
+}
+.oxygen-home img {
+    vertical-align: middle;
+}
+.oxygen-home button {
+    border-radius: 0;
+}
+.oxygen-home button {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.oxygen-home button {
+    text-transform: none;
+}
+.oxygen-home [type="button"],
+.oxygen-home button {
+    -webkit-appearance: button;
+}
+.oxygen-home ::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+.oxygen-home ::-webkit-datetime-edit-day-field,
+.oxygen-home ::-webkit-datetime-edit-fields-wrapper,
+.oxygen-home ::-webkit-datetime-edit-hour-field,
+.oxygen-home ::-webkit-datetime-edit-minute,
+.oxygen-home ::-webkit-datetime-edit-month-field,
+.oxygen-home ::-webkit-datetime-edit-text,
+.oxygen-home ::-webkit-datetime-edit-year-field {
+    padding: 0;
+}
+.oxygen-home ::-webkit-inner-spin-button {
+    height: auto;
+}
+.oxygen-home ::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+.oxygen-home ::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+.oxygen-home ::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button;
+}
+.oxygen-home .container,
+.oxygen-home .container-fluid {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .oxygen-home .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .oxygen-home .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .oxygen-home .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .oxygen-home .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .oxygen-home .container {
+        max-width: 1320px;
+    }
+}
+.oxygen-home .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.oxygen-home .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+.oxygen-home .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .oxygen-home .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .oxygen-home .col-md-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+    .oxygen-home .col-md-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+.oxygen-home .collapse:not(.show) {
+    display: none;
+}
+.oxygen-home .nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+}
+.oxygen-home .navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+.oxygen-home .navbar > .container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+.oxygen-home .navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: var(--bs-navbar-brand-font-size);
+    color: var(--bs-navbar-brand-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.oxygen-home .navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.oxygen-home .navbar-nav .nav-link.active {
+    color: var(--bs-navbar-active-color);
+}
+.oxygen-home .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+.oxygen-home .navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+}
+.oxygen-home .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+@media (min-width: 992px) {
+    .oxygen-home .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .oxygen-home .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+    .oxygen-home .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+    .oxygen-home .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+    .oxygen-home .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+}
+.oxygen-home .w-100 {
+    width: 100% !important;
+}
+.oxygen-home .bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+   </style>
+   <body>
+      <div class="oxygen-home">
+         <!-- banner -->
+         <section class="hero_section">
+            <div class="container logo-header">
+               <div class="row a-center">
+                  <div class="col-md-9 col-sm-12">
+                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                           <a class="navbar-brand" href="#"><img src="img/logo.webp" class="logo" width="290" height="61"></a>
+                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                              <ul class="navbar-nav">
+                                 <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#whyChooseUs">Why Duke</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#aboutUs">About Us</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#services">Services</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#contactUs">Contact Us</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </nav>
+                  </div>
+                  <div class="col-md-3 col-sm-12 btn-mob">
+                     <a href="tel:+17049535608" class="">
+                     <button class="btn-duke-blue float-right"><img src="img/header_call.webp" width="25" height="24">&nbsp; +1 (704) 953-5608</button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="container banner_sec">
+               <div class="row">
+                  <div class="col-md-12 heropara">
+                     <h1>Achieve Peak Business<br> Profitability with<br>Duke Business Advisors
+                     </h1>
+                     <p>Transforming businesses into profitable ventures, one <br>strategic move at a time.
+                     </p>
+                     <a href="#contactUs" class="">
+                     <button class="btn-duke-blue">Get Quote</button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <img src="img/banner2.webp" class="w-100 banner2_img" >
+         </section>
+      </div>
+   </body>
+
+</html>
